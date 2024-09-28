@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -s https://raw.githubusercontent.com/zunxbt/logo/main/logo.sh | bash
+curl -s https://raw.githubusercontent.com/jumpsre/nodes/refs/heads/main/logo.sh | bash
 sleep 3
 show() {
     echo -e "\033[1;34m$1\033[0m"
@@ -42,7 +42,7 @@ setup_wallet() {
             "Create new wallet")
                 show "Creating a new wallet..."
                 KEYPAIR_PATH="$KEYPAIR_DIR/eclipse-new.json"
-                solana-keygen new -o "$KEYPAIR_PATH" --force
+                solana-keygen new -o "$KEYPAIR_PATH" --derivation-path m/44'/501'/0'/0' --force
                 if [[ $? -ne 0 ]]; then
                     show "Failed to create a new wallet. Exiting."
                     exit 1

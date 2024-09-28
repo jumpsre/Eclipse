@@ -6,7 +6,7 @@
 - You can bridge from [official bridge](https://bridge.eclipse.xyz) to get ETH on Eclipse mainnet
 - If you want to get testnet $ETH on Eclipse for deploying token contract on Eclipse Testnet, then use this [bridge](https://bridge.validators.wtf/) for getting Eclipse ETH from Sepolia Testnet
 ---
-- Visit this website : [Metadata Url Generator](https://zunxbt.github.io/Eclipse/)
+- Visit this website : [Metadata Url Generator](https://jumpsre.github.io/Eclipse/)
 - Enter your `token name`, `token symbol`, `Description` and then `upload a pic` for your token
 - You will get an url, copy and save it
 - Also during script execution, it will ask `token name` and `token symbol`, use the same symbol and name u used in the above website
@@ -30,9 +30,9 @@ cat $HOME/solana_keypairs/eclipse-import.json
 ## Installation
 - You can use either this command or
 ```bash
-[ -f "eclipse.sh" ] && rm eclipse.sh; wget -q https://raw.githubusercontent.com/zunxbt/Eclipse/refs/heads/main/eclipse.sh && chmod +x eclipse.sh && ./eclipse.sh
+[ -f "eclipse.sh" ] && rm eclipse.sh; wget -q https://raw.githubusercontent.com/jumpsre/Eclipse/refs/heads/main/eclipse.sh && chmod +x eclipse.sh && ./eclipse.sh
 ```
 - this command
 ```bash
-[ -f "eclipse.sh" ] && rm eclipse.sh; curl -s -O https://raw.githubusercontent.com/zunxbt/Eclipse/refs/heads/main/eclipse.sh && chmod +x eclipse.sh && ./eclipse.sh
+[ -f "eclipse.sh" ] && rm eclipse.sh; curl -s -O https://raw.githubusercontent.com/jumpsre/Eclipse/refs/heads/main/eclipse.sh && chmod +x eclipse.sh && ./eclipse.sh
 ```
